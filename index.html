@@ -13,7 +13,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-6VL0D027EB');
   </script>
 </head>
@@ -21,111 +20,114 @@
   <header>
     <div class="container">
       <h1>Hello, I'm <span>Yu (Bruce) Lin</span></h1>
-      <p>Final Semester Computer Science Student</p>
+      <p class="subtitle">Full-Stack Developer &amp; Computer Science Graduate</p>
+      <p class="bio">A former tradesman turned software engineer — I build practical tools that solve real problems, especially ones I've encountered firsthand.</p>
       <p class="rusted">Once sparking steel. Now sparking innovation!</p>
     </div>
   </header>
+
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h4>Languages</h4>
+          <div class="skill-tags">
+            <span>TypeScript</span><span>JavaScript</span><span>Python</span><span>Java</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Frontend</h4>
+          <div class="skill-tags">
+            <span>React</span><span>Next.js</span><span>Tailwind CSS</span><span>React Native</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Backend</h4>
+          <div class="skill-tags">
+            <span>FastAPI</span><span>Spring Boot</span><span>Node.js</span><span>Supabase</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Tools &amp; Platforms</h4>
+          <div class="skill-tags">
+            <span>PostgreSQL</span><span>AWS</span><span>Vercel</span><span>Git</span><span>Expo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <main>
     <section id="projects">
       <div class="container">
         <h2>My Projects</h2>
-  
+
+        <!-- OptimizeCut Web App -->
         <div class="project-row">
-          <!-- Mobile App Card -->
+          <div class="project-card">
+            <div class="project-info">
+              <h3>🌐 OptimizeCut (Web App)</h3>
+              <p>
+                The web version of the optimizer — production-ready, free to use, and accessible to anyone who cuts material. Solves the <strong>1D Cutting Stock Problem</strong> to minimize waste across multiple material types in a single session.
+              </p>
+              <p>
+                Features kerf compensation, visual cut diagrams, PDF export, cloud project saving, and Google OAuth. Backend powered by <b>Google OR-Tools CP-SAT solver</b>.
+              </p>
+              <div class="tech-tags">
+                <span>Next.js 16</span><span>React 19</span><span>TypeScript</span><span>Tailwind CSS 4</span><span>FastAPI</span><span>OR-Tools</span><span>Supabase</span><span>Vercel</span>
+              </div>
+              <div class="project-links">
+                <a href="https://optimizecut.com" target="_blank">Live Site →</a>
+                <a href="https://github.com/freeheart110/cutting-optimizer-web.git" target="_blank">GitHub →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Screenshots -->
+          <div class="project-gallery-wrapper2">
+            <img src="images/opticut_web/opticut_blank_page.png" alt="OptimizeCut Input Page">
+            <img src="images/opticut_web/optimizecut_showcase.png" alt="OptimizeCut Showcase">
+            <img src="images/opticut_web/opticut_text_report.png" alt="OptimizeCut Text Report">
+          </div>
+        </div>
+
+        <!-- Cutting Optimizer Mobile App -->
+        <div class="project-row">
           <div class="project-card">
             <div class="project-info">
               <h3>📱 Cutting Optimizer (Mobile App)</h3>
               <p>
-                A mobile app, inspired by my tradesman work, that intelligently optimizes material usage for linear cutting using three algorithms: 
-                <strong>First-Fit Decreasing (FFD)</strong>, 
-                <strong>Best-Fit Decreasing (BFD)</strong>, and a 
-                <strong>custom Genetic Algorithm</strong>. 
-                This app solves a practical problem not currently addressed by any existing app in the store.
+                No existing app on the market solves this — inspired by my tradesman work, this mobile app eliminates the manual guesswork of cutting stock materials by finding the most efficient cut combinations automatically.
               </p>
               <p>
-                Test account: username: freeheart110@gmail.com; password: 344945
+                Uses three algorithms: <strong>First-Fit Decreasing (FFD)</strong>, <strong>Best-Fit Decreasing (BFD)</strong>, and a <strong>custom Genetic Algorithm</strong>.
               </p>
-              <a href="https://github.com/freeheart110/Cutting-Optimizer.git" target="_blank">GitHub Repo →</a>    
-              &nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="https://expo.dev/preview/update?message=%17march24&updateRuntimeVersion=1.0.0&createdAt=2025-03-25T03%3A01%3A26.930Z&slug=exp&projectId=7335e93d-a0d6-44d1-8af0-10e33d369a32&group=7137fe47-707f-45f7-8c2b-2d447d71ec3f" target="_blank">Expo Link →</a>
+              <p class="test-account">Test account: freeheart110@gmail.com / 344945</p>
+              <div class="tech-tags">
+                <span>React Native</span><span>Expo</span><span>TypeScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/freeheart110/Cutting-Optimizer.git" target="_blank">GitHub →</a>
+                <a href="https://expo.dev/preview/update?message=%17march24&updateRuntimeVersion=1.0.0&createdAt=2025-03-25T03%3A01%3A26.930Z&slug=exp&projectId=7335e93d-a0d6-44d1-8af0-10e33d369a32&group=7137fe47-707f-45f7-8c2b-2d447d71ec3f" target="_blank">Expo →</a>
+              </div>
             </div>
           </div>
-        
+
           <!-- Screenshots -->
           <div class="project-gallery-wrapper">
-            <img src="images/input_screen.png" alt="App Screenshot 1">
+            <img src="images/opticut_app/input_screen.png" alt="Input Screen">
             <span class="arrow">→</span>
-            <img src="images/report_screen.png" alt="App Screenshot 2">
+            <img src="images/opticut_app/report_screen.png" alt="Report Screen">
             <span class="arrow">→</span>
-            <img src="images/history_screen.png" alt="App Screenshot 3">
-          </div>
-        </div>
-        <!-- ClaimPilot (Web App) -->
-        <div class="project-row">
-          <div class="project-card">
-            <div class="project-info">
-              <h3>🌐 ClaimPilot (Web App)</h3>
-              <p>
-                A full-stack insurance claim management system featuring role-based workflows for policyholders, Admins and Adjusters.
-                Built with <b>Spring Boot (Java)</b>, <b>PostgreSQL</b>, <b>React + Next.js</b>, and deployed with <b>HTTPS</b> on <b>AWS EC2</b>, <b>RDS</b>, and <b>Vercel</b>.
-              </p>
-              <p>
-                Dummy account (Admin) - username: admin@claimpilot.com;
-                <br>
-                password: admin123
-              </p>
-              <a href="https://claim-pilot-frontend.vercel.app" target="_blank">Live Site →</a>
-              &nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="https://github.com/freeheart110/ClaimPilot-Frontend" target="_blank">Frontend GitHub →</a><br>
-              <a href="https://github.com/freeheart110/ClaimPilot" target="_blank">Backend GitHub →</a>
-              &nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="https://claimpilot.duckdns.org/swagger-ui/index.html#/" target="_blank">Swagger-UI →</a>
-
-            </div>
-          </div>
-
-          <!-- Screenshots -->
-          <div class="project-gallery-wrapper2" >
-            <img src="images/home-page.png" alt="ClaimPilot Homepage Screenshot">
-            <div class="stacked-images">
-              <img src="images/Admin-Page.png" alt="Admin Dashboard Screenshot">
-              <img src="images/Adjuster-Dashboard.png" alt="Adjuster-Dashboard Screenshot">
-            </div>
-            <img src="images/Audit-Trail-page.png" alt="Audit-Trail-page Screenshot">
-            </div>
+            <img src="images/opticut_app/history_screen.png" alt="History Screen">
           </div>
         </div>
 
-        <!-- Elearning (Web App) -->
-        <div class="project-row">
-          <div class="project-card">
-            <div class="project-info">
-              <h3>🌐 eLearning Platform (Web App)</h3>
-              <p>
-                A full-stack web-based e-learning platform that enables students and teachers to communicate, collaborate, receive notifications and manage courses in real time. Built with <b>Django</b>, <b>Django Channels</b>, <b>React</b>, <b>WebSockets</b>, <b>Celery</b>, and <b>Redis</b>.
-              </p>
-              <p>
-                Dummy account - username: student2;
-                <br>
-                password: abcd4321
-              </p>
-              <a href="https://elearning-gp32.onrender.com" target="_blank">Live Site →</a>
-              &nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="https://elearning-gp32.onrender.com/api/schema/swagger-ui/" target="_blank">Swagger-UI →</a>
-            </div>
-          </div>
-
-          <!-- Right Side: Screenshots -->
-          <div class="project-gallery-wrapper3">
-            <img src="images/ERD - elearning.png" alt="Entity Relational Diagram">
-            <img src="images/chat.jpg" alt="Chat Screenshot">
-            <img src="images/student_dashboard.jpg" alt="Dashborad Screenshot">
-          </div>
-        </div>
       </div>
     </section>
   </main>
+
   <!-- Contact info section -->
   <section id="contact">
     <div class="container">
@@ -145,7 +147,7 @@
     </div>
   </section>
   <footer>
-    <p>&copy; 2025 Bruce Yu Lin</p>
+    <p>&copy; 2026 Bruce Yu Lin</p>
   </footer>
   <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
   <script src="script.js"></script>
